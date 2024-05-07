@@ -7,6 +7,8 @@ const projects_div = document.getElementById('projects')
 
 const navigation = document.getElementById('navbar')
 
+const more_about_me = document.getElementById('more-about-me')
+
 navigation.querySelectorAll('li').forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
@@ -24,3 +26,18 @@ navigation.querySelectorAll('li').forEach(element => {
         }
     });
 });
+
+more_about_me.addEventListener('click', () => {
+    about_div.scrollIntoView()
+})
+
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    var distanceFromTop = navbar.getBoundingClientRect().top;
+  
+    if (distanceFromTop <= 0) {
+      navbar.classList.add('sticky');
+    } else {
+      navbar.classList.remove('sticky');
+    }
+  });

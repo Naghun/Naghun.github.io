@@ -52,7 +52,7 @@
                         proficient in backend development, frontend design, and database management.
                     </p>
                     <div class="col-8">
-                        <button class="col-6 header-button btn">More About Me</button>
+                        <button class="col-6 header-button btn" id="more-about-me">More About Me</button>
                     </div>
                     
                 </div>
@@ -66,7 +66,7 @@
         <!-- row 2 -->
         <div class="row d-flex justify-content-center align-items-center about-row" id="about">
             <div class="col-10 d-flex justify-content-center align-items-center about-me-container p-0 m-0">
-                <div class="col-3 vertical-nav-container d-md-none flex-column justify-content-center align-items-center p-0 m-0">
+                <div class="col-3 vertical-nav-container d-lg-flex d-none flex-column justify-content-center align-items-center p-0 m-0">
                     <div class="circle-one"></div>
                     <div class="middle-line"></div>
                     <ul class="vertical-nav col-10 p-0 m-0">
@@ -123,7 +123,7 @@
         <!-- row 3 -->
         <div class="row d-flex justify-content-center align-items-center education-row" id="education">
             <div class="col-10 education-container d-flex justify-content-center align-items-center p-0 m-0">
-                <div class="col-3 vertical-nav-container d-flex flex-column justify-content-center align-items-center p-0 m-0">
+                <div class="col-3 vertical-nav-container d-lg-flex d-none flex-column justify-content-center align-items-center p-0 m-0">
                     <div class="circle-one"></div>
                     <div class="middle-line"></div>
                     <ul class="vertical-nav col-12 p-0 m-0">
@@ -138,34 +138,34 @@
                 <div class="col-9 p-0 m-0 d-flex justify-content-center align-items-center flex-column education">
                     <h1 class="col-10 text-center education-header">Education</h1>
                     <div class="col-10 d-flex justify-content-start align-items-center education-details m-0">
-                        <div class="col-4 item p-0 m-0">
+                        <div class="col-4 item p-1 m-0">
                             <h4 class="item-header p-0 m-0 py-2">Behram-begova Medresa</h4>
                             <p class="item-years p-0 m-0">2012-2016</p>
                             <p class="item-town p-0 m-0">Tuzla</p>
                         </div>
-                        <div class="col-4 item p-0 m-0">
+                        <div class="col-4 item p-1 m-0">
                             <h4 class="item-header p-0 m-0 py-2">Faculty of Natural Sciences</h4>
                             <p class="item-years p-0 m-0">2021-2023</p>
                             <p class="item-town p-0 m-0">Sarajevo</p>
                         </div>
-                        <div class="col-4 item p-0 m-0">
+                        <div class="col-4 item p-1 m-0">
                             <h4 class="item-header p-0 m-0 py-2">Internship TechForgeLabs</h4>
                             <p class="item-years p-0 m-0">2024-Current</p>
                             <p class="item-town p-0 m-0">Sarajevo</p>
                         </div>
                     </div>
-                    <div class="col-10 courses d-flex justify-content-center align-items-start">
-                        <div class="col-4 item p-0 m-0">
+                    <div class="col-10 courses d-flex justify-content-center align-items-center">
+                        <div class="col-4 item p-1 m-0">
                             <h4 class="item-header p-0 m-0 py-2">Wordpress Course</h4>
                             <p class="item-years p-0 m-0">2023-2024</p>
                             <p class="item-town p-0 m-0">Sarajevo</p>
                         </div>
-                        <div class="col-4 item p-0 m-0">
+                        <div class="col-4 item p-1 m-0">
                             <h4 class="item-header p-0 m-0 py-2">Python - Data Analyst Course</h4>
                             <p class="item-years p-0 m-0">2023-2024</p>
                             <p class="item-town p-0 m-0">Sarajevo</p>
                         </div>
-                        <div class="col-4 item p-0 m-0">
+                        <div class="col-4 item p-1 m-0">
                             <h4 class="item-header p-0 m-0 py-2">Machine Learning Course</h4>
                             <p class="item-years p-0 m-0">2024-Current</p>
                             <p class="item-town p-0 m-0">Sarajevo</p>
@@ -179,7 +179,7 @@
         <!-- row 4   -->
         <div class="row d-flex justify-content-center align-items-center skills-row" id="skills">
             <div class="col-10 skills-container d-flex justify-content-center align-items-center p-0 m-0">
-                <div class="col-3 vertical-nav-container d-flex flex-column justify-content-center align-items-center p-0 m-0">
+                <div class="col-3 vertical-nav-container d-lg-flex d-none flex-column justify-content-center align-items-center p-0 m-0">
                     <div class="circle-one"></div>
                     <div class="middle-line"></div>
                     <ul class="vertical-nav col-12 p-0 m-0">
@@ -192,44 +192,44 @@
                     <div class="circle-two"></div>
                 </div>
                 <div class="col-9 p-0 m-0 d-flex justify-content-center align-items-center flex-column skills">
-                    <h1 class="skills-header col-10 p-2 text-center">Skills</h1>
-                    <div class="col-12 skills-details d-flex justify-content-center align-items-center" id="skills-details">
+                    <h1 class="skills-header col-10 text-center">Skills</h1>
+                    <div class="col-10 skills-details d-flex justify-content-center align-items-center" id="skills-details">
                         <div class="d-flex flex-column backend justify-content-between align-items-center">
                             <h3 class="backend-header text-center py-2">Backend</h3>
                             <img src="images/code.png" alt="" class="backend-image">
-                            <button class="dive-deep-button col-12 btn" id="backend-button">Show Skills</button>
+                            <button class="dive-deep-button col-10 btn" id="backend-button">Show Skills</button>
                         </div>
                         <div class="d-flex frontend flex-column justify-content-between align-items-center">
                             <h3 class="frontend-header text-center py-2">Frontend</h3>
                             <img src="images/frontend.png" alt="Ui image" class="frontend-image">
-                            <button class="dive-deep-button col-12 btn" id="frontend-button">Show Skills</button>
+                            <button class="dive-deep-button col-10 btn" id="frontend-button">Show Skills</button>
                         </div>
                         <div class="d-flex aditional flex-column justify-content-between align-items-center">
-                            <h3 class="aditional-header text-center py-2">Aditional</h3>
+                            <h3 class="additional-header text-center py-2">Aditional</h3>
                             <img src="images/additional-skills.png" alt="Wheel icon" class="aditional-image">
-                            <button class="dive-deep-button col-12 btn" id="additional-button">Show Skills</button>
+                            <button class="dive-deep-button col-10 btn" id="additional-button">Show Skills</button>
                         </div>
                     </div>
                     <!-- hidden containers   -->
                     <div class="col-12 d-none hide d-flex flex-column justify-content-between align-items-center backend-div" id="backend-div">
                         <div class="col-11 backend-skills-container d-flex flex-column justify-content-around align-items-center p-2 m-0" id="backend-div-inside">
                             <h1 class="col-12 text-center backend-header">Backend Skills</h1>
-                            <div class="col-10 backend-div-details d-flex justify-content-around align-items-center">
-                                <div class="col-10 php"></div>
-                                <div class="box p-5 m-2" id="backend-box">
-                                    <img src="images/skills/python.png" alt="python image" class="img-python1">
-                                    <img src="images/skills/python.png" alt="python image" class="img-python2">
+                            <div class="col-10 backend-div-details d-flex justify-content-center align-items-center">
+                                <div class="php col-4 d-flex flex-column justify-content-start align-items-center p-0 m-0">
+                                    <img src="images/skills/php.png" alt="php icon" class="php-icon">
+                                    <ul class="php-details col-12">
+                                        <li class="php-item">Themes</li>
+                                        <li class="php-item">Plugins</li>
+                                        <li class="php-item">Advanced Custom Fields</li>
+                                        <li class="php-item">Ajax</li>
+                                        <li class="php-item">Full Site Editing</li>
+                                    </ul>
                                 </div>
-                                <ul class="list-of-skills col-4 d-flex flex-column align-items-center p-1 m-0" id="skills-list">
-                                    <li class="col 4 text-center">Django</li>
-                                    <li class="col 4 text-center">DRF</li>
-                                    <li class="col 4 text-center">Data Analysis</li>
-                                    <li class="col 4 text-center">Web Scraping</li>
-                                    <li class="col 4 text-center">Selenium</li>
-                                </ul>
-                                <div class="database p-5 m-2 d-flex justify-content-around align-items-center">
-                                    <img src="images/skills/mysql.png" alt="mysql icon" class="img-mysql">
-                                    <img src="images/skills/postgresql.png" alt="postgresql icon" class="img-postgresql">
+                                <div class="python col-4 d-flex justify-content-center align-items-center">
+                                    python
+                                </div>
+                                <div class="sql col-4 d-flex justify-content-center align-items-center">
+                                    sql
                                 </div>
                             </div>
                             <button class="col-6 text-center btn backend-close-button" id="backend-div-close">Close Window</button>
@@ -286,8 +286,8 @@
 
         <!-- row 5   -->
         <div class="row d-flex justify-content-center align-items-center projects-row" id="projects">
-            <div class="col-10 projects-container d-flex justify-content-center align-items-center p-0 m-0">
-                <div class="col-3 vertical-nav-container d-flex flex-column justify-content-center align-items-center p-0 m-0">
+            <div class="col-10 projects-container d-flex justify-content-center align-items-center p-0 py-4 m-0">
+                <div class="col-3 vertical-nav-container d-lg-flex d-none flex-column justify-content-center align-items-center p-0 m-0">
                     <div class="circle-one"></div>
                     <div class="middle-line"></div>
                     <ul class="vertical-nav col-12 p-0 m-0">
@@ -480,16 +480,9 @@
         </div>
         <!-- row 5   -->
 
-
-
-
-
-
-
-
-        <!-- row not finished   -->
+        <!-- row 6   -->
         <div class="row d-flex justify-content-center align-items-center end-row g-2">
-            <div class="col-5 motivational-container d-flex flex-column justify-content-center align-items-center text-justify p-0 m-2">
+            <div class="col-5 motivational-container d-flex flex-column justify-content-center align-items-center text-justify p-0 py-4 m-2">
                 <h1 class="col-12 text-center p-2 motivational-header">Motivational Letter</h1>
                 <div class="col-10 letter-container">
                     <p class="paragraph col-12">
@@ -529,7 +522,7 @@
                 </div>
             </div>
         </div>
-        <!-- row not finished   -->
+        <!-- row 6   -->
 
     </div>
 
