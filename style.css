@@ -900,21 +900,44 @@
                         .php-icon {
                             width: 80px;
                             height: 80px;
+                            padding-bottom: 10px;
                         }
                         .php-details {
                             list-style: none;
-                            height: 80px;
-                            width: 80px;
                             text-align: center;
+                            padding: 0%;
+                            font-family: var(--normal-font);
+                            font-size: 14px;
                         }
                     }
                     .python {
                         background-color: white;
-                        height: 250px;
+                        height: 300px;
+                        .python-icon {
+                            width: 80px;
+                            height: 80px;
+                            padding-bottom: 10px;
+                        }
+                        .python-details {
+                            list-style: none;
+                            text-align: center;
+                            padding: 0%;
+                            font-family: var(--normal-font);
+                            font-size: 14px;
+                        }
                     }
                     .sql {
                         background-color: white;
-                        height: 250px;
+                        height: 300px;
+                        .database-icon {
+                            width: 80px;
+                            height: 80px;
+                            padding-bottom: 10px;
+                        }
+                        .mysql, .postgresql {
+                            font-size: 14px;
+                            font-family: var(--normal-font);
+                        }
                     }
                 }
             }
@@ -939,50 +962,72 @@
             z-index: 3;
         
             .frontend-skills-container {
-                background-color: #bcdb4a;
+                background-color: var(--red-color);
                 height: 500px;
                 transition: 1s all ease;
                 opacity: 0;
                 visibility: hidden;
-                font-family: "Roboto Slab", serif;
+                font-family: var(--slab-font);
                 font-weight: 500;
                 position: relative;
-                border: none;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                border-radius: 20px;
 
                 .frontend-header {
-                    color: #111111;
+                    color: white;
                     font-size: 36px;
                 }
-
-                .frontend-div-details {
-                    .frontend-skills-list {
-                        list-style: none;
-                        padding: 10px;
-                        margin: 0%;
-                        li {
-                            font-size: larger;
-                            .js-icon {
-                                background-color: black;
-                            }
-                            i {
-                                font-size: x-large;
-                            }
-                        }
-                    }
-                }
-
                 .frontend-close-button {
-                    border-radius: 10px;
+                    border-radius: 20px;
                     border: none;
                     background-color: #E6C333;
-                    font-weight: 700;
+                    font-weight: 500;
                     transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
                 }
                 .frontend-close-button:hover {
                     background-color: #e4e4e3;
+                }
+
+                .frontend-div-details {
+                    .upper-details {
+                        gap: 20px;
+                        .html, .js {
+                            height: 80px;
+                            width: 100px;
+                            background-color: white;
+                            border: none;
+                            border-radius: 10px;
+                            img {
+                                width: 40px;
+                            }
+                        }
+                        .css {
+                            height: 80px;
+                            width: 120px;
+                            background-color: white;
+                            border: none;
+                            border-radius: 10px;
+                            .css-icon {
+                                width: 40px;
+                            }
+                            .bootstrap-icon, .sass-icon {
+                                width: 25px;
+                            }
+                        }
+                    }
+                    .lower-details {
+                        gap: 20px;
+                        padding: 20px;
+                        .react, .wordpress {
+                            height: 80px;
+                            width: 100px;
+                            background-color: white;
+                            border: none;
+                            border-radius: 10px;
+                            img {
+                                width: 40px;
+                            }
+                        }
+                    }
+
                 }
             }
             .show {
@@ -1006,54 +1051,44 @@
             z-index: 3;
         
             .additional-skills-container {
-                background-color: #9ac9d0;
+                background-color: var(--red-color);
                 height: 500px;
                 transition: 1s all ease;
                 opacity: 0;
                 visibility: hidden;
-                font-family: "Roboto Slab", serif;
+                font-family: var(--slab-font);
                 font-weight: 500;
                 position: relative;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
+
                 .additional-header {
-                    color: #111111;
+                    color: white;
                     font-size: 36px;
+                }
+                .additional-close-button {
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #E6C333;
+                    font-weight: 500;
+                    transition: 0.6s all;
+                }
+                .additional-close-button:hover {
+                    background-color: #e4e4e3;
                 }
                 .additional-div-details {
                     .additional-skills-list {
                         list-style: none;
-                        padding: 10px;
+                        padding: 10px 0px;
                         margin: 0%;
+                        color: black;
+                        font-family: var(--normal-font);
+                        gap: 5px;
                         li {
-                            font-size: larger;
-                            gap: 10px;
-                            .js-icon {
-                                background-color: black;
-                            }
-                            i {
-                                margin-left: 10px;
-                                font-size: x-large;
-                            }
-                            .span-inside {
-                                margin: 5px;
-                                padding: 5px;
-                                width: 50px;
-                            }
+                            background-color: white;
+                            padding: 10px 0px;
+                            border: none;
+                            border-radius: 10px;
                         }
                     }
-                }
-                .additional-close-button {
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #E6C333;
-                    font-weight: 700;
-                    transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
-                }
-                .additional-close-button:hover {
-                    background-color: #e4e4e3;
                 }
             }
             .show {
@@ -1137,19 +1172,44 @@
     .skills-container {
         .skills {
             gap: 10px;
-            width: 90%;
+            width: 100%;
             height: 500px;
             .backend-div {
                 .backend-skills-container {
+                    width: 100%;
                     .backend-header {
                         margin: 0%;
                         padding: 0%;
                     }
                     .backend-div-details {
                         padding: 0%;
-                        margin-bottom: 30px;
-                        flex-direction: column;
-                        /*  */
+                    }
+                }  
+            }
+            .frontend-div {
+                .frontend-skills-container {
+                    width: 100%;
+                    .frontend-header {
+                        margin: 0%;
+                        padding: 0%;
+                    }
+                    .frontend-div-details {
+                        padding: 0%;
+                    }
+                }  
+            }
+            .additional-div {
+                .additional-skills-container {
+                    width: 100%;
+                    .additional-header {
+                        margin: 0%;
+                        padding: 0%;
+                    }
+                    .additional-div-details {
+                        padding: 0%;
+                        .additional-skills-list {
+                            gap: 20px;
+                        }
                     }
                 }  
             }
@@ -1214,18 +1274,80 @@
 @media (max-width: 770px) {
     .skills-container {
         .skills {
-            height: 800px;
+            min-height: 800px;
             justify-content: start;
             align-items: center;
             padding-bottom: 26px;
 
             .backend-div {
                 .backend-skills-container {
+                    height: max-content;
+                    padding: 40px 0px;
                     .backend-header {
                         font-size: 20px;
+                        padding: 20px 0px;
                     }
-                    /* .backend-div-details {
-                    } */
+                    .backend-div-details {
+                        flex-direction: column;
+                        .php, .python, .sql {
+                            width: 90%;
+                        }
+                        .sql {
+                            height: 150px;
+                        }
+                        .php {
+                            height: 230px;
+                        }
+                        .python {
+                            height: 260px;
+                        }
+                    }
+                    .backend-close-button {
+                        margin: 20px 0px;
+                        font-size: 14px;
+                    }
+                }  
+            }
+            .frontend-div {
+                .frontend-skills-container {
+                    height: 800px;
+                    .frontend-header {
+                        padding: 20px 0px;
+                        font-size: 24px;
+                    }
+                    .frontend-div-details {
+                        .upper-details {
+                            flex-direction: column;
+                            .html, .css, .js {
+                                width: 200px;
+                            }
+                        }
+                        .lower-details {
+                            flex-direction: column;
+                            .react, .wordpress {
+                                width: 200px;
+                            }
+                        }
+                    }
+
+                    .frontend-close-button {
+                        font-size: 14px;
+                    }
+                }  
+            }
+            .additional-div {
+                .additional-skills-container {
+                    height: 800px;
+                    .additional-header {
+                        padding: 20px 0px;
+                        font-size: 24px;
+                    }
+                    .additional-div-details {
+                        flex-direction: column;
+                    }
+                    .additional-close-button {
+                        font-size: 14px;
+                    }
                 }  
             }
             .skills-header {
