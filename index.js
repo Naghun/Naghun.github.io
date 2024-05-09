@@ -192,6 +192,7 @@ function open_divs(main_div, inside_div, background_div) {
     setTimeout(() => {
         inside_div.classList.add('show')
         inside_div.classList.remove('hide')}, 100)
+        inside_div.scrollIntoView()
     add_blur(background_div)
 }
 
