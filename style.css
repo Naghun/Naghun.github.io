@@ -1469,41 +1469,41 @@
             border: none;
             border-radius: 20px;
             z-index: 3;
+            width: 100%;
         }
 
         .duvar-div {
             .duvar-project-container {
-                background-color: #9ac9d0;
-                height: 500px;
+                background-color: var(--red-color);
                 transition: 1s all ease;
                 opacity: 0;
+                height: 820px;
                 visibility: hidden;
-                font-family: "Roboto Slab", serif;
+                font-family: var(--slab-font);
                 font-weight: 500;
                 position: relative;
                 border: none;
-                border-radius: 20px;
                 box-shadow: 2px 2px 2px rgb(80, 80, 80);
                 .duvar-header {
-                    color: #111111;
+                    color: white;
                     font-size: 36px;
                 }
                 .duvar-div-details {
                     h5 {
                         font-size: 20px;
+                        color: white;
                     }
                     p {
                         font-size: 16px;
-                        color: rgb(59, 59, 59);
+                        color: var(--secondary-color);
                     }
                 }
                 .duvar-close-button {
-                    border-radius: 10px;
                     border: none;
-                    background-color: #E6C333;
+                    border-radius: 20px;
+                    background-color: var(--yellowish-color);
                     font-weight: 700;
                     transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
                 }
                 .duvar-close-button:hover {
                     background-color: #e4e4e3;
@@ -2127,4 +2127,97 @@
     opacity: 0;
     transform: translateX(100px);
     transition: 350ms;
+}
+
+/* corousel */
+.carousel {
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+
+    .img-slider {
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+
+        .slide {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: block;
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+            }
+        }
+
+        .slide[data-active] {
+            opacity: 1;
+        }
+    }
+
+    .carousel-button {
+        position: absolute;
+        border: none;
+        background: none;
+        font-size: 40px;
+        z-index: 2;
+        top: 50%;
+        color: #b6b5b5;
+        transform: translateY(-50%);
+        cursor: pointer;
+        border-radius: 0.25rem;
+        padding: 5px;
+        background-color: rgba(0,0,0, .1);
+    }
+
+    .carousel-button:hover {
+        color: white;
+        background-color: rgba(0,0,0, .3);
+    }
+    .carousel-button:focus {
+        outline: 1px solid black;
+        color: white;
+        background-color: rgba(0,0,0, .3);
+    }
+    
+    .carousel-button.prev {
+        left: 1rem;
+    }
+    .carousel-button.next {
+        right: 1rem;
+    }
+    
+}
+
+@media (max-width: 770px) {
+    .carousel {
+        height: 180px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        .img-slider {
+            .slide {
+                img {
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .carousel {
+        height: 150px;
+        width: 250px;
+    }
 }

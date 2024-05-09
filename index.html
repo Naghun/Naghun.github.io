@@ -366,21 +366,36 @@
                     <!-- hidden containers   -->
                     <div class="col-10 d-none justify-content-center align-items-center duvar-div" id="duvar-div">
                         <div class="col-12 duvar-project-container p-0 m-0 hide d-flex flex-column justify-content-between align-items-center p-3" id="duvar-div-inside">
-                            <h3 class="col-10 d-flex text-center justify-content-center align-items-center">Duvar Apartments</h3>
+                            <h3 class="col-10 d-flex text-center justify-content-center align-items-center  duvar-header">Duvar Apartments</h3>
                             <div class="col-10 duvar-div-details d-flex flex-column justify-content-center align-items-center">
                                 <h5 class="text-center col-10">Technologies</h5>
                                 <p class="col-10 tech text-center">Wordpress, HTML&CSS(SASS), Javascript</p>
                                 <h5 class="text-center col-10">Description</h5>
                                 <p class="col-10 desc text-center">Insternship solo project done with wordpress understrap theme from scratch</p>
                             </div>
-                            <div class="col-12 project-galery-div d-flex flex-column justify-content-center align-items-center">
-                                <h3>Galery</h3>
-                                <div class="col-10 galery d-flex justify-content-center align-items-center">
-                                    <img src="images/additional-skills.png" alt="slika" class="col-4">
-                                    <img src="images/additional-skills.png" alt="slika" class="col-4">
-                                    <img src="images/additional-skills.png" alt="slika" class="col-4">
+                            <section aria-label="photos d-flex justify-content-center align-items-center col-12 p-2">
+                                <div class="carousel position-relative d-flex justify-content-center align-items-center m-auto" data-carousel>
+                                    <button class="carousel-button prev" data-carousel-button = "prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="carousel-button next" data-carousel-button = "next"><i class="fas fa-chevron-right"></i></button>
+                                    <ul class="col-12 d-flex img-slider" data-slides>
+                                        <li class="slide col-12 d-flex justify-content-center align-items-center" data-active>
+                                            <img src="images/project-img/duvar-front.jpg" alt="slika" class="galery-img col-10">
+                                        </li>
+                                        <li class="slide col-12">
+                                            <img src="images/project-img/duvar-reser.jpg" alt="slika" class="galery-img col-10">
+                                        </li>
+                                        <li class="slide col-12">
+                                            <img src="images/project-img/duvar-res-form.jpg" alt="slika" class="galery-img col-10">
+                                        </li>
+                                        <li class="slide col-12">
+                                            <img src="images/project-img/dashboard.jpg" alt="slika" class="galery-img col-10">
+                                        </li>
+                                        <li class="slide col-12">
+                                            <img src="images/project-img/duvar-location.jpg" alt="slika" class="galery-img col-10">
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
+                            </section>
                             <button class="btn col-6 text-center duvar-close-button" id="close-duvar-div">Close Window</button>
                         </div>  
                     </div>
