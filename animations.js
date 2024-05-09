@@ -9,6 +9,31 @@ const navigation = document.getElementById('navbar')
 
 const more_about_me = document.getElementById('more-about-me')
 
+// vertical-nav
+
+const vertical_home = document.querySelectorAll('.home-vertical')
+const vertical_about = document.querySelectorAll('.about-vertical')
+const vertical_education = document.querySelectorAll('.education-vertical')
+const vertical_skills = document.querySelectorAll('.skills-vertical')
+const vertical_projects = document.querySelectorAll('.projects-vertical')
+
+// events
+
+function vertical_scroll(vertical_items, target_div) {
+    vertical_items.forEach((item) => {
+        item.addEventListener('click', () => {
+            target_div.scrollIntoView();
+            item.classList.add('active')
+        });
+    });
+}
+
+vertical_scroll(vertical_home, home_div);
+vertical_scroll(vertical_about, about_div);
+vertical_scroll(vertical_education, education_div);
+vertical_scroll(vertical_skills, skills_div);
+vertical_scroll(vertical_projects, projects_div);
+
 navigation.querySelectorAll('li').forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
@@ -40,4 +65,4 @@ window.addEventListener('scroll', function() {
     } else {
       navbar.classList.remove('sticky');
     }
-  });
+});
