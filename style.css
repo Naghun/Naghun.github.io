@@ -1470,10 +1470,7 @@
             border-radius: 20px;
             z-index: 3;
             width: 100%;
-        }
-
-        .duvar-div {
-            .duvar-project-container {
+            .inside-project-container {
                 background-color: var(--red-color);
                 transition: 1s all ease;
                 opacity: 0;
@@ -1484,309 +1481,29 @@
                 position: relative;
                 border: none;
                 box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                .duvar-header {
+                .inside-project-header {
                     color: white;
                     font-size: 36px;
                 }
-                .duvar-div-details {
+                .inside-project-div-details {
                     h5 {
                         font-size: 20px;
                         color: white;
                     }
                     p {
-                        font-size: 16px;
+                        font-size: 14px;
                         color: var(--secondary-color);
                     }
                 }
-                .duvar-close-button {
+                .inside-project-close-button {
                     border: none;
                     border-radius: 20px;
                     background-color: var(--yellowish-color);
                     font-weight: 700;
                     transition: 0.6s all;
                 }
-                .duvar-close-button:hover {
+                .inside-project-close-button:hover {
                     background-color: #e4e4e3;
-                }
-                .project-galery {
-                    img {
-                        width: 100px;
-                    }
-                }
-            }
-            .show {
-                transition: 1s all;
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            .hide {
-                transition: 1s all;
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-        .tournament-div {
-            .tournament-project-container {
-                background-color: #9ac9d0;
-                height: 500px;
-                transition: 1s all ease;
-                opacity: 0;
-                visibility: hidden;
-                font-family: "Roboto Slab", serif;
-                font-weight: 500;
-                position: relative;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                .tournament-header {
-                    color: #111111;
-                    font-size: 36px;
-                }
-                .tournament-div-details {
-                    h5 {
-                        font-size: 20px;
-                    }
-                    p {
-                        font-size: 16px;
-                        color: rgb(59, 59, 59);
-                    }
-                }
-                .tournament-close-button {
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #E6C333;
-                    font-weight: 700;
-                    transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
-                }
-                .tournament-close-button:hover {
-                    background-color: #e4e4e3;
-                }
-                .project-galery {
-                    img {
-                        width: 100px;
-                    }
-                }
-            }
-            .show {
-                transition: 1s all;
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            .hide {
-                transition: 1s all;
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-        .gmail-div {
-            .gmail-project-container {
-                background-color: #9ac9d0;
-                height: 500px;
-                transition: 1s all ease;
-                opacity: 0;
-                visibility: hidden;
-                font-family: "Roboto Slab", serif;
-                font-weight: 500;
-                position: relative;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                .gmail-header {
-                    color: #111111;
-                    font-size: 36px;
-                }
-                .gmail-div-details {
-                    h5 {
-                        font-size: 20px;
-                    }
-                    p {
-                        font-size: 16px;
-                        color: rgb(59, 59, 59);
-                    }
-                }
-                .gmail-close-button {
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #E6C333;
-                    font-weight: 700;
-                    transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
-                }
-                .gmail-close-button:hover {
-                    background-color: #e4e4e3;
-                }
-                .project-galery {
-                    img {
-                        width: 100px;
-                    }
-                }
-            }
-            .show {
-                transition: 1s all;
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            .hide {
-                transition: 1s all;
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-        .travian-div {
-            .travian-project-container {
-                background-color: #9ac9d0;
-                height: 500px;
-                transition: 1s all ease;
-                opacity: 0;
-                visibility: hidden;
-                font-family: "Roboto Slab", serif;
-                font-weight: 500;
-                position: relative;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                .travian-header {
-                    color: #111111;
-                    font-size: 36px;
-                }
-                .travian-div-details {
-                    h5 {
-                        font-size: 20px;
-                    }
-                    p {
-                        font-size: 16px;
-                        color: rgb(59, 59, 59);
-                    }
-                }
-                .travian-close-button {
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #E6C333;
-                    font-weight: 700;
-                    transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
-                }
-                .travian-close-button:hover {
-                    background-color: #e4e4e3;
-                }
-                .project-galery {
-                    img {
-                        width: 100px;
-                    }
-                }
-            }
-            .show {
-                transition: 1s all;
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            .hide {
-                transition: 1s all;
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-        .ecommerce-div {
-            .ecommerce-project-container {
-                background-color: #9ac9d0;
-                height: 500px;
-                transition: 1s all ease;
-                opacity: 0;
-                visibility: hidden;
-                font-family: "Roboto Slab", serif;
-                font-weight: 500;
-                position: relative;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                .ecommerce-header {
-                    color: #111111;
-                    font-size: 36px;
-                }
-                .ecommerce-div-details {
-                    h5 {
-                        font-size: 20px;
-                    }
-                    p {
-                        font-size: 16px;
-                        color: rgb(59, 59, 59);
-                    }
-                }
-                .ecommerce-close-button {
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #E6C333;
-                    font-weight: 700;
-                    transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
-                }
-                .ecommerce-close-button:hover {
-                    background-color: #e4e4e3;
-                }
-                .project-galery {
-                    img {
-                        width: 100px;
-                    }
-                }
-            }
-            .show {
-                transition: 1s all;
-                visibility: visible;
-                opacity: 1;
-            }
-            
-            .hide {
-                transition: 1s all;
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-        .todo-div {
-            .todo-project-container {
-                background-color: #9ac9d0;
-                height: 500px;
-                transition: 1s all ease;
-                opacity: 0;
-                visibility: hidden;
-                font-family: "Roboto Slab", serif;
-                font-weight: 500;
-                position: relative;
-                border: none;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px rgb(80, 80, 80);
-                .todo-header {
-                    color: #111111;
-                    font-size: 36px;
-                }
-                .todo-div-details {
-                    h5 {
-                        font-size: 20px;
-                    }
-                    p {
-                        font-size: 16px;
-                        color: rgb(59, 59, 59);
-                    }
-                }
-                .todo-close-button {
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #E6C333;
-                    font-weight: 700;
-                    transition: 0.6s all;
-                    border: 1px solid rgb(44, 44, 44);
-                }
-                .todo-close-button:hover {
-                    background-color: #e4e4e3;
-                }
-                .project-galery {
-                    img {
-                        width: 100px;
-                    }
                 }
             }
             .show {
@@ -1866,6 +1583,23 @@
         }
     }
 }  
+@media (max-width: 1200px) {
+    .projects-row {
+        .projects-container {
+            .projects {
+                .duvar-div, .travian-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
+                    .inside-project-container {
+                        .inside-project-div-details {
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  
 @media (max-width: 1000px) {
     .projects-container {
         height: 800px;
@@ -1900,6 +1634,12 @@
         .projects-container {
             height: 1400px;
             .projects {
+                .duvar-div, .travian-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
+                    height: 900px;
+                    .inside-project-container {
+                        height: 900px;
+                    }
+                }
                 .projects-header {
                     font-size: 22px;
                 }
