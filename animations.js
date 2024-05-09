@@ -17,22 +17,23 @@ const vertical_education = document.querySelectorAll('.education-vertical')
 const vertical_skills = document.querySelectorAll('.skills-vertical')
 const vertical_projects = document.querySelectorAll('.projects-vertical')
 
+const list_items = document.querySelectorAll('.vertical-nav-item')
+
 // events
 
 function vertical_scroll(vertical_items, target_div) {
     vertical_items.forEach((item) => {
         item.addEventListener('click', () => {
-            target_div.scrollIntoView();
-            item.classList.add('active')
+            target_div.scrollIntoView()
         });
     });
 }
 
-vertical_scroll(vertical_home, home_div);
-vertical_scroll(vertical_about, about_div);
-vertical_scroll(vertical_education, education_div);
-vertical_scroll(vertical_skills, skills_div);
-vertical_scroll(vertical_projects, projects_div);
+vertical_scroll(vertical_home, home_div)
+vertical_scroll(vertical_about, about_div)
+vertical_scroll(vertical_education, education_div)
+vertical_scroll(vertical_skills, skills_div)
+vertical_scroll(vertical_projects, projects_div)
 
 navigation.querySelectorAll('li').forEach(element => {
     element.addEventListener('click', (e) => {
