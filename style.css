@@ -24,6 +24,7 @@
 .body {
     scroll-behavior: smooth;
     transition: 1s all ease;
+    background-color: var(--secondary-color);
 }
 .jump-row {
     transition: 1s ease;
@@ -105,14 +106,16 @@
             padding: 5px;
         }
         .header-button {
-            background-color: #E6C333;
-            font-family: var(--normal-font);
-            font-size: large;
-            font-weight: 700;
-            color: rgba(0,0,0,0.65);
+            background-color: var(--yellowish-color);
+            font-weight: 500;
+            transition: 0.6s all;
             border: none;
-            border-radius: 25px;
+            border-radius: 20px;
+            font-size: 14px;
             margin-bottom: 20px;
+        }
+        .header-button:hover {
+            background-color: #e4e4e3;
         }
     }
 }
@@ -312,7 +315,6 @@
                 font-family: var(--normal-font);
                 font-weight: 500;
                 height: 300px;
-
                 .about-me-footer-best-header {
                     font-size: 20px;
                     font-family: var(--slab-font);
@@ -537,7 +539,7 @@
             padding: 20px 10px;
             .item {
                 .item-header {
-                    font-size: 16px;
+                    font-size: 15px;
                     color: black;
                 }
 
@@ -548,10 +550,11 @@
             }
         }
         .courses {
-            padding: 20px 10px;
+            padding: 10px;
             .item {
+                padding: 20px 10px;
                 .item-header {
-                    font-size: 16px;
+                    font-size: 15px;
                     color: black;
                 }
 
@@ -1671,92 +1674,76 @@
     margin-bottom: 40px;
 }
 
-.motivational-container, .contact-container {
-    background-color: #fdfdfd;
-    height: 400px;
-    box-shadow: 4px 5px 10px 1px rgba(0, 0, 0, 0.1);
-}
-
-.motivational-container {
-    padding: 20px;
-    .motivational-header {
-        font-family: var(--slab-font);
-        margin: 10px 0px;
-        font-size: 32px;
-    }
-    .letter-container {
-        .paragraph {
-            font-family: var(--normal-font);
-        }
-    }
-}
-
 .contact-container {
+    background-color: #fdfdfd;
+    height: 200px;
+    box-shadow: 4px 5px 10px 1px rgba(0, 0, 0, 0.1);
     .contact-details {
+        margin: 0%;
         background-color: white;
         padding: 20px 0px;
         .contact-header {
             color: black;
             font-family: var(--slab-font);
             font-weight: 500;
-            font-size: 32px;
-            margin: 10px 0px;
+            font-size: 26px;
+            margin: 0%;
         }
-        .icons-upper {
-            gap: 10px;
-            .email{
-                border: 1px solid var(--secondary-color);
-                border-radius: 5px;
-                cursor: pointer;
-                padding: 10px;
-                text-decoration: none;
-                color: black;
-                h5 {
-                    font-size: 18px;
-                    font-family: var(--normal-font);
-                }
-                .email-icon {
+        .icons-left {
+            .icons-contact {
+                .email{
+                    border: 1px solid var(--secondary-color);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    padding: 10px;
+                    text-decoration: none;
                     color: black;
-                    font-size: 18px;
+                    h5 {
+                        font-size: 18px;
+                        font-family: var(--normal-font);
+                    }
+                    .email-icon {
+                        color: black;
+                        font-size: 18px;
+                    }
                 }
-            }
-            .email:hover {
-                box-shadow: 1px 1px 4px var(--blue-color);
-                h5 {
-                    color: var(--blue-color);
+                .email:hover {
+                    box-shadow: 1px 1px 4px var(--blue-color);
+                    h5 {
+                        color: var(--blue-color);
+                    }
+                    .email-icon {
+                        color: var(--blue-color);
+                    }
                 }
-                .email-icon {
-                    color: var(--blue-color);
-                }
-            }
-            .linkedin {
-                border: 1px solid var(--secondary-color);
-                border-radius: 5px;
-                cursor: pointer;
-                padding: 10px;
-                text-decoration: none;
-                color: black;
-                h5 {
-                    font-size: 18px;
-                    font-family: var(--normal-font);
-                }
-                .linkedin-icon {
+                .linkedin {
+                    border: 1px solid var(--secondary-color);
+                    border-radius: 5px;
+                    cursor: pointer;
+                    padding: 10px;
+                    text-decoration: none;
                     color: black;
-                    font-size: 18px;
+                    h5 {
+                        font-size: 18px;
+                        font-family: var(--normal-font);
+                    }
+                    .linkedin-icon {
+                        color: black;
+                        font-size: 18px;
+                    }
                 }
-            }
-            .linkedin:hover {
-                box-shadow: 1px 1px 4px var(--blue-color);
-                h5 {
-                    color: var(--blue-color);
-                }
-                .linkedin-icon {
-                    color: var(--blue-color);
+                .linkedin:hover {
+                    box-shadow: 1px 1px 4px var(--blue-color);
+                    h5 {
+                        color: var(--blue-color);
+                    }
+                    .linkedin-icon {
+                        color: var(--blue-color);
+                    }
                 }
             }
         }
-        .icons-lower {
-            gap: 10px;
+        .icons-right {
             .cv {
                 border: 1px solid var(--secondary-color);
                 border-radius: 5px;
@@ -1765,7 +1752,7 @@
                 text-decoration: none;
                 color: black;
                 h5 {
-                    font-size: 14px;
+                    font-size: 18px;
                     font-family: var(--normal-font);
                 }
                 .cv-icon {
@@ -1786,7 +1773,7 @@
                 text-decoration: none;
                 color: black;
                 h5 {
-                    font-size: 14px;
+                    font-size: 18px;
                     font-family: var(--normal-font);
                 }
                 .github-icon {
@@ -1806,44 +1793,92 @@
         }
     }
 }
-
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .end-row{
-        flex-direction: column;
-        .contact-container, .motivational-container {
-            width: 85%;
-            padding: 0%;
-            margin: 0%;
-        }
-        .contact-container {
+        .contact-container{
             .contact-details {
-                margin: 0%;
+                .icons-left {
+                    .icons-contact {
+                        .email, .linkedin {
+                            height: 80px;
+                        }
+                    }
+                }
+                .icons-right {
+                    .icons-info {
+                        .cv, .github {
+                            height: 80px;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 @media (max-width: 1000px) {
     .end-row{
         flex-direction: column;
-        .contact-container, .motivational-container {
+        .contact-container{
             width: 85%;
             padding: 0%;
             margin: 0%;
-        }
-        .contact-container {
             .contact-details {
                 margin: 0%;
-                .icons-upper {
-                    .email, .linkedin {
-                        height: 80px;
-                        h5 {
-                            font-size: 14px;
+                .icons-left {
+                    .icons-contact {
+                        .email, .linkedin {
+                            height: 80px;
+                            h5 {
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
-                .icons-lower {
-                    .cv, .github {
-                        height: 80px;
+                .icons-right {
+                    .icons-info {
+                        .cv, .github {
+                            height: 80px;
+                            h5 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 770px) {
+    .end-row{
+        .contact-container{
+            width: 85%;
+            padding: 0%;
+            margin: 0%;
+            height: 330px;
+            .contact-details {
+                flex-direction: column;
+                width: 100%;
+                .icons-left {
+                    width: 90%;
+                    .icons-contact {
+                        .email, .linkedin {
+                            height: 80px;
+                            h5 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .icons-right {
+                    width: 90%;
+                    .icons-info {
+                        .cv, .github {
+                            height: 80px;
+                            h5 {
+                                font-size: 12px;
+                            }
+                        }
                     }
                 }
             }
