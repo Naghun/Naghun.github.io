@@ -1497,7 +1497,7 @@
                         font-size: 14px;
                         color: var(--secondary-color);
                     }
-                    .tournament-paragraphs {
+                    .tournament-paragraphs, .travian-paragraphs {
                         font-size: 12px;
                     }
                 }
@@ -1585,7 +1585,7 @@
             .tournament-div {
                 .inside-project-container {
                     .inside-project-div-details {
-                        .tournament-paragraphs {
+                        .tournament-paragraphs, .travian-paragraphs {
                             font-size: 10px;
                         }
                     }
@@ -1608,7 +1608,7 @@
                             p {
                                 font-size: 12px;
                             }
-                            .tournament-paragraphs {
+                            .tournament-paragraphs, .travian-paragraphs {
                                 font-size: 10px;
                             }
                         }
@@ -1652,7 +1652,7 @@
         .projects-container {
             height: 1400px;
             .projects {
-                .duvar-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
+                .duvar-div, .gmail-div, .travian-div, .ecommerce-div, .todo-div {
                     height: 900px;
                     .inside-project-container {
                         height: 900px;
