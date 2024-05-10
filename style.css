@@ -1497,6 +1497,9 @@
                         font-size: 14px;
                         color: var(--secondary-color);
                     }
+                    .tournament-paragraphs {
+                        font-size: 12px;
+                    }
                 }
                 .inside-project-close-button {
                     border: none;
@@ -1579,6 +1582,15 @@
 @media (max-width: 1400px) {
     .projects-container {
         .projects {
+            .tournament-div {
+                .inside-project-container {
+                    .inside-project-div-details {
+                        .tournament-paragraphs {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
             .projects-header {
                 font-size: 34px;
                 padding: 20px;
@@ -1590,11 +1602,14 @@
     .projects-row {
         .projects-container {
             .projects {
-                .duvar-div, .travian-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
+                .duvar-div, .tournament-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
                     .inside-project-container {
                         .inside-project-div-details {
                             p {
                                 font-size: 12px;
+                            }
+                            .tournament-paragraphs {
+                                font-size: 10px;
                             }
                         }
                     }
@@ -1637,10 +1652,16 @@
         .projects-container {
             height: 1400px;
             .projects {
-                .duvar-div, .travian-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
+                .duvar-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
                     height: 900px;
                     .inside-project-container {
                         height: 900px;
+                    }
+                }
+                .tournament-div {
+                    height: 1000px;
+                    .inside-project-container {
+                        height: 1000px;
                     }
                 }
                 .projects-header {
