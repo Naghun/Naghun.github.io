@@ -1463,7 +1463,7 @@
             }
         }
 
-        .duvar-div, .tournament-div, .gmail-div, .travian-div, .ecommerce-div, .todo-div {
+        .duvar-div, .tournament-div, .gmail-div, .travian-div, .ecommerce-div, .cyber-security-div {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -1602,7 +1602,7 @@
     .projects-row {
         .projects-container {
             .projects {
-                .duvar-div, .tournament-div, .gmail-div, .ecommerce-div, .travian-div, .todo-div {
+                .duvar-div, .tournament-div, .gmail-div, .ecommerce-div, .travian-div, .cyber-security-div {
                     .inside-project-container {
                         .inside-project-div-details {
                             p {
@@ -1652,7 +1652,7 @@
         .projects-container {
             height: 1400px;
             .projects {
-                .duvar-div, .gmail-div, .travian-div, .ecommerce-div, .todo-div {
+                .duvar-div, .gmail-div, .travian-div, .ecommerce-div, .cyber-security-div {
                     height: 900px;
                     .inside-project-container {
                         height: 900px;

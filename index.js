@@ -30,14 +30,14 @@ const open_project_tournament_button = document.getElementById('open-project-tou
 const open_project_gmail_button = document.getElementById('open-project-gym')
 const open_project_travian_button = document.getElementById('open-project-travian')
 const open_project_ecommerce_button = document.getElementById('open-project-ecommerce')
-const open_project_todo_button = document.getElementById('open-project-todo')
+const open_project_cyber_security_button = document.getElementById('open-project-cyber-security')
 
 const close_duvar_div = document.getElementById('close-duvar-div')
 const close_tournament_div = document.getElementById('close-tournament-div')
 const close_gmail_div = document.getElementById('close-gym-div')
 const close_travian_div = document.getElementById('close-travian-div')
 const close_ecommerce_div = document.getElementById('close-ecommerce-div')
-const close_todo_div = document.getElementById('close-todo-div')
+const close_cyber_security_div = document.getElementById('close-cyber-security-div')
 
 const duvar_div = document.getElementById('duvar-div')
 const duvar_div_inside = document.getElementById('duvar-div-inside')
@@ -54,8 +54,8 @@ const travian_div_inside = document.getElementById('travian-div-inside')
 const ecommerce_div = document.getElementById('ecommerce-div')
 const ecommerce_div_inside = document.getElementById('ecommerce-div-inside')
 
-const todo_div = document.getElementById('todo-div')
-const todo_div_inside = document.getElementById('todo-div-inside')
+const cyber_security_div = document.getElementById('cyber-security-div')
+const cyber_security_div_inside = document.getElementById('cyber-security-div-inside')
 
 const project_details = document.getElementById('project-details')
 
@@ -160,14 +160,14 @@ close_ecommerce_div.addEventListener('click', () => {
     close_divs(ecommerce_div, ecommerce_div_inside, project_details)
 })
 
-// todo
+// cyber-security
 
-open_project_todo_button.addEventListener('click', () => {
-    open_divs(todo_div, todo_div_inside, project_details)
+open_project_cyber_security_button.addEventListener('click', () => {
+    open_divs(cyber_security_div, cyber_security_div_inside, project_details)
 })
 
-close_todo_div.addEventListener('click', () => {
-    close_divs(todo_div, todo_div_inside, project_details)
+close_cyber_security_div.addEventListener('click', () => {
+    close_divs(cyber_security_div, cyber_security_div_inside, project_details)
 })
 
 // functions
