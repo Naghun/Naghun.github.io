@@ -32,12 +32,24 @@ const open_project_travian_button = document.getElementById('open-project-travia
 const open_project_ecommerce_button = document.getElementById('open-project-ecommerce')
 const open_project_cyber_security_button = document.getElementById('open-project-cyber-security')
 
+const open_project_gordon_button = document.getElementById('open-project-gordon')
+const open_project_gumar_button = document.getElementById('open-project-gumar')
+const open_project_mos_button = document.getElementById('open-project-mos')
+
+
+
 const close_duvar_div = document.getElementById('close-duvar-div')
 const close_tournament_div = document.getElementById('close-tournament-div')
 const close_gmail_div = document.getElementById('close-gym-div')
 const close_travian_div = document.getElementById('close-travian-div')
 const close_ecommerce_div = document.getElementById('close-ecommerce-div')
 const close_cyber_security_div = document.getElementById('close-cyber-security-div')
+
+const close_gordon_div = document.getElementById('close-gordon-div')
+const close_gumar_div = document.getElementById('close-gumar-div')
+const close_mos_div = document.getElementById('close-mos-div')
+
+
 
 const duvar_div = document.getElementById('duvar-div')
 const duvar_div_inside = document.getElementById('duvar-div-inside')
@@ -56,6 +68,15 @@ const ecommerce_div_inside = document.getElementById('ecommerce-div-inside')
 
 const cyber_security_div = document.getElementById('cyber-security-div')
 const cyber_security_div_inside = document.getElementById('cyber-security-div-inside')
+
+const gordon_div = document.getElementById('gordon-div')
+const gordon_div_inside = document.getElementById('gordon-div-inside')
+
+const gumar_div = document.getElementById('gumar-div')
+const gumar_div_inside = document.getElementById('gumar-div-inside')
+
+const mos_div = document.getElementById('mos-div')
+const mos_div_inside = document.getElementById('mos-div-inside')
 
 const project_details = document.getElementById('project-details')
 
@@ -168,6 +189,36 @@ open_project_cyber_security_button.addEventListener('click', () => {
 
 close_cyber_security_div.addEventListener('click', () => {
     close_divs(cyber_security_div, cyber_security_div_inside, project_details)
+})
+
+// gordon
+
+open_project_gordon_button.addEventListener('click', () => {
+    open_divs(gordon_div, gordon_div_inside, project_details)
+})
+
+close_gordon_div.addEventListener('click', () => {
+    close_divs(gordon_div, gordon_div_inside, project_details)
+})
+
+// gumar
+
+open_project_gumar_button.addEventListener('click', () => {
+    open_divs(gumar_div, gumar_div_inside, project_details)
+})
+
+close_gumar_div.addEventListener('click', () => {
+    close_divs(gumar_div, gumar_div_inside, project_details)
+})
+
+// mos
+
+open_project_mos_button.addEventListener('click', () => {
+    open_divs(mos_div, mos_div_inside, project_details)
+})
+
+close_mos_div.addEventListener('click', () => {
+    close_divs(mos_div, mos_div_inside, project_details)
 })
 
 // functions
